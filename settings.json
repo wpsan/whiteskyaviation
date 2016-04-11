@@ -1,0 +1,8 @@
+{ "galaxy.meteor.com":
+	{ "env":
+		{
+			"ROOT_URL": "http://helitour.whiteskyaviation.co.id",
+			"MONGO_URL": "mongodb://wpstaging:staging@ds051523.mlab.com:51523/wsa"
+		}
+	}
+}
