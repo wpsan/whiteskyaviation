@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'dincond-mediumregular';
+    src: url('../fonts/din/dincond-medium-webfont.eot');
+    src: url('../fonts/din/dincond-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din/dincond-medium-webfont.woff2') format('woff2'),
+         url('../fonts/din/dincond-medium-webfont.woff') format('woff'),
+         url('../fonts/din/dincond-medium-webfont.ttf') format('truetype'),
+         url('../fonts/din/dincond-medium-webfont.svg#dincond-mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.title{
+    font-family: 'dincond-mediumregular'; 
+}
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+    background: none;
+    color:#fff;
+}
+
+.dropdown-menu{
+    background: rgba(0,0,0,0.7);
+}
+
+.dropdown-menu > li > a{
+    color:#ccc;
+}
+
+.dropdown-menu > li > a:hover{
+    background: rgba(255,255,255,0.1);
+    color:#fff;
+}
+
+.banner::after{
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+}
+
+.carousel, .item, .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+.carousel-caption{
+    top: 35%;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, .6);
+}
+
+.carousel-caption h1{
+    color:#fff;
+    font-size: 48px;
+    font-family: 'dincond-mediumregular';
+}
+
+.carousel-caption p{
+    color:#fff;
+    background: rgba(0,0,0,0.5);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.text-thin{
+    font-weight: 300;
+}
+
+.btn-default{
+	color: #000;
+    background-color: rgba (203,118,38,0.7) !important;
+}
+
+.btn-default:hover {
+	color: #ffffff;
+	background-color: rgba (203,118,38,0.7) !important;
+/*	border-color: #339BEB;*/
+}
+
+.text-description{
+    font-size: 16px;
+    line-height: 30px;
+    color:#666;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.title{
+    letter-spacing: 2px;
+}
+
+.big-space{
+    margin-top: 50px;
+}
+
+.sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ef8b2d;
+    letter-spacing: 1px;
+}
+
+.default-bg.blue {
+    background-color: #000;
+}
+
+.main-navigation .navbar-default .navbar-nav > li.active > a {
+    color:#a7a9ac;
+}
+
+.main-navigation .navbar-default .navbar-nav > li > a:hover,
+.main-navigation .navbar-default .navbar-nav > li.active > a:hover {
+	color: #fff;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+    z-index: 9999;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #000;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+@media only screen and (max-width : 640px) {
+    .carousel-caption{
+        top: 15%;
+    }
+
+    .carousel-caption h1{
+        color:#fff;
+        font-size: 24px;
+    }
+
+    .carousel-caption p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width : 641px) and (max-width : 667px) {
+    .carousel-caption{
+        top: 15%;
+    }
+
+    .carousel-caption h1{
+        color:#fff;
+        font-size: 30px;
+    }
+
+    .carousel-caption p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width : 668px) and (max-width : 736px) {
+    .carousel-caption{
+        top: 15%;
+    }
+
+    .carousel-caption h1{
+        color:#fff;
+        font-size: 30px;
+    }
+
+    .carousel-caption p{
+        font-size: 24px;
+    }
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-header{
+    background-color: #183c47;
+}
+
+.btn-default:hover {
+	color: #ffffff;
+	background-color: #183c47;
+	border-color: #0d2228;
+}
+
+
+ul.thumbnails-carousel {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+ul.thumbnails-carousel .center {
+    display: inline-block;
+}
+ul.thumbnails-carousel li {
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+.controls-background-reset {
+    background: none !important;
+}
+.active-thumbnail {
+    opacity: 0.4;
+}
+.indicators-fix {
+    bottom: 70px;
+}
+
+.thumbnail-container a{
+    padding: 10px;
+}
+
+.thumbnails-container-small img{
+    padding: 10px !important;
+}

@@ -1,0 +1,409 @@
+/* philip */
+@font-face {
+    font-family:'DIN-Light';
+    src: url('fonts/DIN-Light_gdi.eot');
+    src: url('fonts/DIN-Light_gdi.eot?#iefix') format('embedded-opentype'),
+        url('fonts/DIN-Light_gdi.woff') format('woff'),
+        url('fonts/DIN-Light_gdi.ttf') format('truetype'),
+        url('fonts/DIN-Light_gdi.svg#DIN-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-25CA;
+}
+
+.text-din-light{
+    font-family: 'DIN-Light';
+    letter-spacing: -1px;
+}
+
+body{
+  padding-top: 50px;
+}
+
+.title{
+    font-family: 'dincond-mediumregular'; 
+}
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+    background: none;
+    color:#fff;
+}
+
+.dropdown-menu{
+    background: rgba(0,0,0,0.7);
+}
+
+.dropdown-menu > li > a{
+    color:#ccc;
+}
+
+.dropdown-menu > li > a:hover{
+    background: rgba(255,255,255,0.1);
+    color:#fff;
+}
+
+.banner::after{
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+}
+
+.carousel, .item, .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+.carousel-caption{
+    top: 35%;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, .6);
+}
+
+.carousel-caption h1{
+    color:#fff;
+    font-size: 48px;
+    font-family: 'dincond-mediumregular';
+}
+
+.carousel-caption p{
+    color:#fff;
+    background: rgba(0,0,0,0.5);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.text-thin{
+    font-weight: 300;
+}
+
+.btn-default{
+	color: #000;
+    background-color: rgba (203,118,38,0.7) !important;
+}
+
+.btn-default:hover {
+	color: #ffffff;
+	background-color: rgba (203,118,38,0.7) !important;
+/*	border-color: #339BEB;*/
+}
+
+.text-description{
+    font-size: 16px;
+    line-height: 30px;
+    color:#666;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.title{
+    letter-spacing: 2px;
+}
+
+.big-space{
+    margin-top: 50px;
+}
+
+.sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ef8b2d;
+    letter-spacing: 1px;
+}
+
+.default-bg.blue {
+    background-color: #000;
+}
+
+.main-navigation .navbar-default .navbar-nav > li.active > a {
+    color:#a7a9ac;
+}
+
+.main-navigation .navbar-default .navbar-nav > li > a:hover,
+.main-navigation .navbar-default .navbar-nav > li.active > a:hover {
+	color: #fff;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+    z-index: 9999;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #000;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+@media only screen and (max-width : 640px) {
+    .carousel-caption{
+        top: 15%;
+    }
+
+    .carousel-caption h1{
+        color:#fff;
+        font-size: 24px;
+    }
+
+    .carousel-caption p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width : 641px) and (max-width : 667px) {
+    .carousel-caption{
+        top: 15%;
+    }
+
+    .carousel-caption h1{
+        color:#fff;
+        font-size: 30px;
+    }
+
+    .carousel-caption p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width : 668px) and (max-width : 736px) {
+    .carousel-caption{
+        top: 15%;
+    }
+
+    .carousel-caption h1{
+        color:#fff;
+        font-size: 30px;
+    }
+
+    .carousel-caption p{
+        font-size: 24px;
+    }
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-header{
+    background-color: #183c47;
+}
+
+.btn-default:hover {
+	color: #ffffff;
+	background-color: #183c47;
+	border-color: #0d2228;
+}
+
+ul.thumbnails-carousel {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+ul.thumbnails-carousel .center {
+    display: inline-block;
+}
+ul.thumbnails-carousel li {
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+.controls-background-reset {
+    background: none !important;
+}
+.active-thumbnail {
+    opacity: 0.4;
+}
+.indicators-fix {
+    bottom: 70px;
+}
+
+.thumbnail-container a{
+    padding: 10px;
+}
+
+.thumbnails-container-small img{
+    padding: 10px !important;
+}
+
+.gap-bottom-small{
+  padding-bottom: 20px;
+}
+
+.owl-carousel .item{
+  position: relative;
+}
+
+.owl-carousel .item .shortDescription{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.owl-carousel .item .shortDescription p{
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+}
+
+.owl-carousel .item .shortDescription h1{
+  color: white;
+  font-family:'DIN-Light';
+  text-transform: uppercase;
+  font-size: 48px;
+  text-shadow:2px 1px 2px #0d0d0d;
+}
+
+.text-white{
+  color: white;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.ibe{
+  position: relative;
+}
+
+.ibe .ibe-container{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.ibe-container .form-control-custom{
+  background: black;
+  color: white;
+  border: none;
+  margin: 5px 0;
+
+}
+
+@media (min-width: 768px){
+  .ibe-container .form-control-custom{
+    width: 100%;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 667px) {
+    .owl-carousel .item .shortDescription{
+      width: 300px;
+    }
+
+    .owl-carousel .item .shortDescription p{
+        font-size: 14px;
+    }
+    .owl-carousel .item .shortDescription h1{
+        font-size: 18px;
+    }
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .text-mobile{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+

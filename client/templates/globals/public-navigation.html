@@ -1,6 +1,25 @@
 <template name="publicNavigation">
-  <ul class="nav navbar-nav navbar-right">
-    <li class="{{currentRoute 'login'}}"><a href="{{pathFor 'login'}}">Login</a></li>
-    <li class="{{currentRoute 'signup'}}"><a href="{{pathFor 'signup'}}">Sign Up</a></li>
-  </ul>
+	
+	<ul class="nav navbar-nav">
+		<li class="{{currentRoute 'login'}}"><a href="{{pathFor 'login'}}">Login</a></li>
+		<li class="{{currentRoute 'signup'}}"><a href="{{pathFor 'signup'}}">Sign Up</a></li>
+		<li class="dropdown">
+        	<a href="#services" class="dropdown-toggle" data-toggle="" role="button" aria-haspopup="true" aria-expanded="false">Services 
+            	<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li class="{{currentRoute 'vipTransport'}}"><a href="{{pathFor 'vipTransport'}}">VIP Transport</a></li>
+				<li class="{{currentRoute 'aircraftManagement'}}"><a href="{{pathFor 'aircraftManagement'}}">Aircraft Management</a></li>
+				<li class="{{currentRoute 'aerialSurvey'}}"><a href="{{pathFor 'aerialSurvey'}}">Aerial Survey</a></li>
+				<li class="{{currentRoute 'Medevac'}}"><a href="{{pathFor 'Medevac'}}">Medevac</a></li>
+				<li class="{{currentRoute 'luxuryLeisure'}}"><a href="{{pathFor 'luxuryLeisure'}}">Luxury Leisure</a></li>
+				<li class="{{currentRoute 'specialEvents'}}"><a href="{{pathFor 'specialEvents'}}">Special Events</a></li>
+				<li class="{{currentRoute 'groundSupport'}}"><a href="{{pathFor 'groundSupport'}}">Ground Support</a></li>
+            </ul>
+        </li>
+		<li class="{{currentRoute 'about'}}"><a href="{{pathFor 'about'}}">About</a></li>
+		<li class="{{currentRoute 'fleet'}}"><a href="{{pathFor 'index'}}#fleet">Fleet</a></li>
+		<li class="{{currentRoute 'contact'}}"><a href="{{pathFor 'index'}}#contact">Contact</a></li>
+	</ul>
+	
 </template>

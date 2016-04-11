@@ -15,16 +15,14 @@ Template.default.helpers({
 	},
 	redirectAuthenticated() {
 	 	return handleRedirect([
-			'login',
-			'signup',
-			'recover-password',
-			'reset-password'
-		], '/' );
+			// 'login',
+			// 'signup',
+			// 'recover-password',
+			// 'reset-password'
+		], '/index' );
 	},
 	redirectPublic() {
 		return handleRedirect([
-			'index',
-			'dashboard'
-		], '/login' );
+		], '/' );
 	}
 });
